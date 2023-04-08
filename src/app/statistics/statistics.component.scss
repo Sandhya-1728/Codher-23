@@ -1,7 +1,4 @@
-.outer{
-  font-size: 50px;
-  text-align: center;
-}
+
 .card-body{
   font-size: 30px;
 }
@@ -15,4 +12,18 @@
 .th, td {
   padding: 10px;
   text-align: center;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f8f6f6;
+
+
+  h1 {
+    font-size: 50px;
+    color: #333333;
+    margin: 0;
+  }
 }

@@ -37,4 +37,17 @@
     page-break-after: auto;
 
   }
-
+  .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f8f6f6;
+  
+  
+    h1 {
+      font-size: 50px;
+      color: #333333;
+      margin: 0;
+    }
+  }

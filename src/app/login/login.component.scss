@@ -1,180 +1,115 @@
-body {
-  /* background-color: #344a72; */
-  background: linear-gradient(to top, #111a99 50%, #da8585 90%) no-repeat;
-  background-size: cover;
-  width: 98vw;
-  min-height: 94vh;
-  font-family: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 90.5rem;
+    background: url('https://raw.githubusercontent.com/Hashtechieofficial/Form-/main/background6.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
 }
 
-.login-box {
-  width: 360px;
-  height: 280px;
-  margin: auto;
-  padding-top: 10;
-  min-height: fit-content;
-  background-position: center;
-  border-radius: 3px;
-  background-color: white;
+.forget label input{
+    margin-right: 3px;
+    
 }
-
-h1 {
-  text-align: center;
-  padding-top: 15px;
+.forget label a{
+    color: #fff;
+    text-decoration: none;
 }
-
-h4 {
-  text-align: center;
+.forget label a:hover{
+    text-decoration: underline;
 }
-
-form {
-  width: 300px;
-  margin-left: 20px;
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
 }
-
-form label {
-  display: flex;
-  margin-top: 20px;
-  font-size: 18px;
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
 }
-
-form input {
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border: 1px solid gray;
-  border-radius: 6px;
-  outline: none;
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
 }
-button {
-  width: 320px;
-  height: 35px;
-  margin-top: 20px;
-  border: none;
-  background-color: #1c35c2;
-  color: white;
-  font-size: 18px;
+.register p a:hover{
+    text-decoration: underline;
 }
-p {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 15px;
-}
-.para-2 {
-  text-align: center;
-  color: black;
-  font-size: 15px;
-  margin-top: -10px;
-}
-.para-2 a {
-  color: whitesmoke;
-}
-
-// .outer{
-//   height: 100vh;
-//   background: linear-gradient(to top, #111a99 50%, #da8585 90%) no-repeat;
-// }
-
-//   .pannel{
-//     display: flex;
-//     flex-direction: column;
-//     border-radius: .5rem;
-//     background-color: #fff;
-//     min-height: 380px;
-//     box-shadow: 20px 20px 80px rgb(247, 243, 243);
-//     border-radius: 12px;
-//     margin-right: 500px;
-//     margin-left: 500px;
-//   }
-
-// .pannel-heading{
-//   text-align: center;
-//   align-items: center;
-// }
-
-// #forget{
-//   min-width: 100px;
-//   margin-left: auto;
-//   text-decoration: none;
-//   cursor: pointer;
-// }
-
-// a:hover{
-//   text-decoration: none;
-// }
-
-// .form-inline label{
-//   padding-left: 10px;
-//   margin: 0;
-//   cursor: pointer;
-// }
-// .btn{
-//   margin-top: 20px;
-//   border-radius: 15px;
-//   size: 100px;
-//   text-align: center;
-//   padding: 10px 200px;
-//   font-size: 18px;
-//   text-align: center;
-//   cursor: pointer;
-//   outline: none;
-//   color: #fff;
-//   background-color: #0d6efd;
-//   border: none;
-//   margin-left: 50px;
-//   border-radius: 15px;
-//   box-shadow: 0 2px #999;
-//   length: 100px;
-// }
-
-// .input-field{
-//   border-radius:5px;
-//   padding: 20px;
-//   display: flex;
-//   margin-left: 10px;
-//   margin-right: 10px;
-//   align-items: center;
-//   cursor: pointer;
-//   border: 2px solid #ddd;
-//   color: #4343ff;
-// }
-// .input-field.error{
-//   border: 1px solid red;
-//   color: red;
-// }
-
-// input[type='text'],
-// input[type='password']{
-//   border: none;
-//   outline: none;
-//   box-shadow: none;
-//   width: 100px;
-// }
-
-// .fa-eye-slash.btn{
-//   position: absolute;
-//   border: none;
-//   outline: none;
-//   box-shadow: none;
-// }
-
-// img{
-//   width: 40px;
-//   height: 40px;
-//   position: inherit;
-//   border-radius: 50%;
-// }
-
-// .bordert{
-//   border-top: 1px solid #aaa;
-//   position:relative;
-// }
-
-// .border:after {
-//   content: "or connect with:";
-//   position: absolute;
-//   top: 390px;
-//   left: 49%;
-//   background-color: #fff;
-//   padding: 0 8px;
-// }

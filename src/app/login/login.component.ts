@@ -15,26 +15,9 @@ export class LoginComponent implements OnInit {
     var username = event.target.elements[0].value;
     var password = event.target.elements[1].value;
     if (username == 'admin@gmail.com' && password == 'admin') {
-      this.router.navigate(['/', 'admin']);
+      this.router.navigate(['/', 'createassignment']);
     } else if (username == 'student@gmail.com' && password == 'student') {
-      this.router.navigate(['/', 'student']);
+      this.router.navigate(['/', 'courses']);
     }
   }
 }
-// export class LoginComponent implements OnInit {
-
-//   type: string = "password"
-//   isText: boolean =false;
-//   eyeIcon: string = "fa-eye-slash";
-//   constructor() { }
-
-//   ngOnInit(): void{
-//   }
-
-//   hideShowPass(){
-//     this.isText = !this.isText;
-//     this.isText ? this.eyeIcon = "fa fa-eye-slash" : this.eyeIcon = "fa fa-eye-slash";
-//     this.isText ? this.type ="text" : this.type ="password";
-//   }
-
-// }
